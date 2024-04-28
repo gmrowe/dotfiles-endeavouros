@@ -1,0 +1,13 @@
+**/.cpcache/
+**/auto-save-list/
+**/backups/
+**/eln-cache/
+**/elpa/
+**/history
+**/*.eld
+**/recentf
+**/smex-items
+**/.bash_history*
+**/transient/
+dconf/*
+**/#*
