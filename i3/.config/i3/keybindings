@@ -21,7 +21,7 @@ https://discovery.endeavouros.com/window-tiling-managers/i3-wm/
 +d
 
 # Window switcher menu (fancy Rofi menu):
-+t
++g
 
 # fancy exit-menu on bottom right:
 +Shift+e
@@ -77,7 +77,7 @@ F1
 
 # change container layout (stacked, tabbed, toggle split)
 +s layout stacking
-+g layout tabbed
++t layout tabbed
 +e layout toggle split
 
 # toggle tiling / floating
@@ -104,3 +104,6 @@ F1
 +w starts Firefox
 +n starts Thunar
  Button screenshot
+
++- move currently focused window to scratchpad
++_ show first scratchpad window
