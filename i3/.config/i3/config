@@ -603,8 +603,8 @@ exec --no-startup-id ~/scripts/swapcaps.sh
 bindsym Mod1+Tab focus right
 
 # Make the currently focused window a scratchpad
-bindsym $mod+minus move scratchpad
+bindsym $mod+Shift+minus move scratchpad
 
 # Show the first scratchpad window
-bindsym $mod+Shift+minus scratchpad show
+bindsym $mod+minus scratchpad show
 
