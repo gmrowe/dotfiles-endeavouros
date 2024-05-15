@@ -152,12 +152,14 @@ HOOKS should be an alist of mode hooks in which whitespace should be ignored"
 ;; colors a small number of elements (strings, comments, errors, etc.)
 ;; see: https://github.com/smallwat3r/emacs-simplicity-theme
 (use-package simplicity-theme
-  :ensure t
+  :load-path "manual-install/simplicity-theme"
   :config
   (setq simplicity-override-colors-alist
-	'(("simplicity-background" . "#2d3743")
+	'(("simplicity-foreground" . "#f0ead6")
+	  ("simplicity-background" . "#2d3743")
 	  ("simplicity-comment" . "#d3e0bc")
-	  ("simplicity-string" . "gold")))
+	  ("simplicity-string" . "gold")
+	  ("simplicity-keyword" . "#cb4b16")))
   (load-theme 'simplicity))
 
 ;; ivy: completion mode for multiple modes. Trust me, we really
@@ -185,16 +187,16 @@ HOOKS should be an alist of mode hooks in which whitespace should be ignored"
   :hook
   (after-init . global-company-mode))
 
-;; flycheck-rust: a flycheck extension for configuring flycheck
-;; automatically for the current cargo project
-(use-package flycheck-rust
-  :ensure t)
-
 ;; flycheck-mode: syntax checking for emacs
 ;; flycheck mode
 (use-package flycheck
   :ensure t
   :init (global-flycheck-mode))
+
+;; flycheck-rust: a flycheck extension for configuring flycheck
+;; automatically for the current cargo project
+(use-package flycheck-rust
+  :ensure t)
 
 ;; projectile: project-aware focused functions (compile, test, search etc.)
 (use-package projectile
