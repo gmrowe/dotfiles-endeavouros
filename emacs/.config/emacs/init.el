@@ -147,7 +147,6 @@ HOOKS should be an alist of mode hooks in which whitespace should be ignored"
   :hook
   (org-mode . org-superstar-mode))
 
-
 ;; simplicity-theme is a minimalist theme that only
 ;; colors a small number of elements (strings, comments, errors, etc.)
 ;; see: https://github.com/smallwat3r/emacs-simplicity-theme
@@ -156,10 +155,10 @@ HOOKS should be an alist of mode hooks in which whitespace should be ignored"
   :config
   (setq simplicity-override-colors-alist
 	'(("simplicity-foreground" . "#f0ead6")
-	  ("simplicity-background" . "#2d3743")
-	  ("simplicity-comment" . "#d3e0bc")
-	  ("simplicity-string" . "gold")
-	  ("simplicity-keyword" . "#cb4b16")))
+	  ("simplicity-background" . "#2a333d")
+	  ("simplicity-comment" . "#A4CF30")
+	  ("simplicity-string" . "#CFAB30")
+	  ("simplicity-keyword" . "#CF5B30")))
   (load-theme 'simplicity))
 
 ;; ivy: completion mode for multiple modes. Trust me, we really
