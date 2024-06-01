@@ -1,3 +1,4 @@
+
 #
 # ~/.bashrc
 #
@@ -15,6 +16,7 @@ alias emacs='emacsclient -c -a ""'
 alias open='xdg-open'
 alias cat='bat'
 alias calc='clac'
+alias tree='tree -C'
 
 # Add fzf keybinding scripts
 eval "$(fzf --bash)"
